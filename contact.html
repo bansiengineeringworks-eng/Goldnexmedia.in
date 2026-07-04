@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Goldnex Media</title>
+<meta name="description" content="Get in touch with Goldnex Media to start a project or book a strategy call.">
+<link rel="icon" href="assets/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="Goldnex Media logo">
+      <span>
+        <span class="word">GOLDNEX</span>
+        <span class="sub">Media</span>
+      </span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Start a project</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="eyebrow">Contact</div>
+    <h1>Let's find out what your spend should be doing.</h1>
+    <p>Tell us a bit about your business and current marketing. We reply within one business day with next steps or a call time.</p>
+  </section>
+
+  <div class="contact-layout">
+    <form id="contact-form" novalidate>
+      <div class="field">
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="email">Work email</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="company">Company</label>
+        <input type="text" id="company" name="company" autocomplete="organization">
+      </div>
+      <div class="field">
+        <label for="budget">Approximate monthly ad spend</label>
+        <select id="budget" name="budget">
+          <option value="">Select a range</option>
+          <option value="under-10k">Under $10K</option>
+          <option value="10-50k">$10K – $50K</option>
+          <option value="50-200k">$50K – $200K</option>
+          <option value="200k-plus">$200K+</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">What are you looking to achieve?</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-gold">Send message →</button>
+      <p id="form-status" role="status"></p>
+    </form>
+
+    <aside>
+      <div class="contact-info-block">
+        <h4>Email</h4>
+        <a href="mailto:hello@goldnexmedia.com">hello@goldnexmedia.com</a>
+      </div>
+      <div class="contact-info-block">
+        <h4>Phone</h4>
+        <a href="tel:+15551234567">+1 (555) 123-4567</a>
+      </div>
+      <div class="contact-info-block">
+        <h4>Studio</h4>
+        <p>Connaught Place, Delhi, IN</p>
+        <p>Remote-first — we work with clients globally</p>
+      </div>
+      <div class="contact-info-block">
+        <h4>Response time</h4>
+        <p>Within one business day, every time.</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col" style="max-width:280px;">
+      <h4>Goldnex Media</h4>
+      <p style="font-style:italic;color:var(--gold-dim);margin-bottom:0.8em;">Elevating Brands. Creating Impact.</p>
+      <p>A performance marketing agency for brands that treat spend like an investment.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Site</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="mailto:hello@goldnexmedia.com">hello@goldnexmedia.com</a>
+      <a href="tel:+15551234567">+1 (555) 123-4567</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Goldnex Media. All rights reserved.</span>
+    <span>Delhi · Remote-first</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
